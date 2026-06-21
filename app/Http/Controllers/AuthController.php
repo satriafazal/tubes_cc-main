@@ -11,6 +11,9 @@ use Illuminate\Validation\Rules;
 class AuthController extends Controller
 {
     public function showLogin() {
+        $vm = request()->header('X-Backend-VM');
+
+        return view('auth.login', compact('vm'));
         return view('auth.login');
     }
 

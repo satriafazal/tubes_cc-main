@@ -31,5 +31,7 @@
             </div>
         </div>
     </div>
-
+    <div style="position: fixed; bottom: 10px; right: 10px; background: #222; color: #fff; padding: 8px 12px; border-radius: 8px;">
+        VM: {{ $vm ?? 'unknown' }}
+    </div>
 @endsection
